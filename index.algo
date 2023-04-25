@@ -2,17 +2,17 @@ ALGORITHM SENTENCE
 
 VAR
 
-    nbv,nbw,nbc:= INTEGER ;
+    nbx,nby,nbz:= INTEGER ;
 
     sentc:= STRING[] ;
 
 BEGIN
 
-    nbc:= 0 ;
+    nbx:= 0 ;
 
-    nbw:= 1 ;
+    nby:= 1 ;
 
-    nbv:= 0;
+    nbz:= 0;
 
     write("type the sentence")
 
@@ -20,26 +20,26 @@ BEGIN
 
 REPEAT
 
-IF (sentc[nbc]=" ") THEN
+IF (sentc[nbz]=" ") THEN
 
-        nbw:=nbw+1 ;
+        nby:=nby+1 ;
 
     END_IF
 
-    IF (sentc[nbc] in ["a","e","u","i","o","y"]) THEN
+    IF (sentc[nbz] in ["a","e","u","i","o","y"]) THEN
 
-    nbv:= nbv +1 ;
+    nbx:= nbx +1 ;
 
 END_IF
 
-    nbc := nbc+1 ;
+    nbz := nbz+1 ;
 
-UNTIL (sentc[nbc]=".")
+UNTIL (sentc[nbz]=".")
 
-write( "le nombre de caractere est ",nbc+1 )
+write( " what is life about ",nbc+1 )
 
-write (" le nombre de mot est ",nbw)
+write (" can do many good thing in the world ",nbw)
 
-write (" le nombre de voyelle est ",nbv)
+write (" but should be in the world ",nbv)
 
 END
